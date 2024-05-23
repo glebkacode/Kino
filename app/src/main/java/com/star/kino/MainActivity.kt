@@ -11,9 +11,12 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.star.kino.feature_auth.data.repository.AuthRepositoryImpl
 import com.star.kino.ui.theme.KinoTheme
 
 class MainActivity : ComponentActivity() {
+    private val authRepository = AuthRepositoryImpl()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()

@@ -21,3 +21,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "Kino"
 include(":app")
+include(":feature-auth")
